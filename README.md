@@ -550,7 +550,7 @@ https://wexa-ai-assignment-beryl.vercel.app/
 
 ### Screen Recording
 
-
+https://drive.google.com/file/d/1deFbvyLEOuKWzxfP25BwZheeXxPxLvwu/view?usp=drivesdk
 ---
 
 # 📧 Submission
