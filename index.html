@@ -1,0 +1,200 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Graph Advisor</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 Career Graph Advisor</h1>
+
+    <form method="POST">
+        <input
+            type="text"
+            name="career_input"
+            placeholder="Examples: AI Engineer, Frontend Developer, Backend Developer, Data Scientist"
+            required
+        >
+        <button type="submit">Search</button>
+    </form>
+
+    {% if details %}
+
+    <div class="output">
+
+        <h1>🎯 {{ details.career }}</h1>
+
+        <hr>
+
+        <h2>🛠️ Recommended Skills</h2>
+        <ul>
+            {% for skill in details.skills %}
+                {% if skill %}
+                <li>{{ skill }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <h2>📚 Courses</h2>
+        <ul>
+            {% for course in details.courses %}
+                {% if course %}
+                <li>{{ course }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <h2>💼 Job Roles</h2>
+        <ul>
+            {% for job in details.jobs %}
+                {% if job %}
+                <li>{{ job }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <h2>🏢 Top Companies</h2>
+        <ul>
+            {% for company in details.companies %}
+                {% if company %}
+                <li>{{ company }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+    </div>
+
+    {% elif request.method == "POST" %}
+
+    <div class="output">
+        <h2>❌ No Career Found</h2>
+        <p>Please try one of these:</p>
+
+        <ul>
+            <li>AI Engineer</li>
+            <li>Frontend Developer</li>
+            <li>Backend Developer</li>
+            <li>Full Stack Developer</li>
+            <li>Data Scientist</li>
+            <li>Cloud Engineer</li>
+            <li>Cyber Security Engineer</li>
+        </ul>
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Graph Advisor</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🚀 Career Graph Advisor</h1>
+        <p>Discover career paths, required skills, courses and companies using Graph Database.</p>
+    </div>
+
+    <form method="POST" class="search-box">
+        <input
+            type="text"
+            name="career_input"
+            placeholder="Search Career (AI Engineer, Frontend Developer...)"
+            required
+        >
+        <button type="submit">🔍 Search</button>
+    </form>
+
+    {% if details %}
+
+    <div class="career-title">
+        <h2>🎯 {{ details.career }}</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🛠 Skills</h3>
+            <div class="tags">
+                {% for skill in details.skills %}
+                    {% if skill %}
+                    <span>{{ skill }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📚 Courses</h3>
+            <div class="tags green">
+                {% for course in details.courses %}
+                    {% if course %}
+                    <span>{{ course }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>💼 Job Roles</h3>
+            <div class="tags orange">
+                {% for job in details.jobs %}
+                    {% if job %}
+                    <span>{{ job }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🏢 Top Companies</h3>
+            <div class="tags purple">
+                {% for company in details.companies %}
+                    {% if company %}
+                    <span>{{ company }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+    {% elif request.method == "POST" %}
+
+    <div class="error-card">
+        <h2>❌ Career Not Found</h2>
+
+        <p>Try one of these careers:</p>
+
+        <div class="tags">
+            <span>AI Engineer</span>
+            <span>Frontend Developer</span>
+            <span>Backend Developer</span>
+            <span>Full Stack Developer</span>
+            <span>Data Scientist</span>
+            <span>Cloud Engineer</span>
+            <span>Cyber Security Engineer</span>
+        </div>
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
