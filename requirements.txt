@@ -1,2 +1,3 @@
-flask
-neo4j
+Flask==3.1.1
+neo4j==5.28.1
+python-dotenv==1.1.1
