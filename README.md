@@ -555,21 +555,7 @@ https://wexa-ai-assignment-beryl.vercel.app/
 
 # 📧 Submission
 
-Submit the GitHub repository URL to:
-
-```text
-hr@wexa.ai
-```
-
-Use the subject:
-
-```text
-CognoDB Assignment 2 – Monika Priya
-```
-
-The CognoDB instance should remain running after submission so that the application can be tested against the live graph database if required.
-
----
+https://github.com/monikagithub1234/WEXA-AI-ASSIGNMENT
 
 # 🎯 What This Project Demonstrates
 
