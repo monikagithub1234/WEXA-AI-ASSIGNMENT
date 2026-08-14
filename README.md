@@ -546,19 +546,10 @@ Possible future improvements include:
 
 ### Hosted Application
 
-**Add your deployed application URL here:**
-
-```text
-https://YOUR-DEPLOYED-APP-URL
-```
+https://wexa-ai-assignment-beryl.vercel.app/
 
 ### Screen Recording
 
-**Add your short demonstration video here:**
-
-```text
-YOUR-SCREEN-RECORDING-LINK
-```
 
 ---
 
