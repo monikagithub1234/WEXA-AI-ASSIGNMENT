@@ -470,6 +470,8 @@ and receives connected information including:
 
 <img width="1920" height="913" alt="{BFB49121-D9D9-4CE7-BFED-384A47A1A319}" src="https://github.com/user-attachments/assets/0a78136e-16d7-48f8-8150-d186dcc3a6bf" />
 
+<img width="1920" height="909" alt="{C01A23F4-14EB-4953-936E-B63BE631A302}" src="https://github.com/user-attachments/assets/bf230af4-7f48-4f07-a109-7e05a49fac80" />
+
 
 # ⚠️ Error Handling
 
